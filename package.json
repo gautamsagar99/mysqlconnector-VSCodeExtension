@@ -1,0 +1,50 @@
+{
+  "name": "mysqlconnector",
+  "displayName": "mysqlconnector",
+  "description": "This will be helpful in connecting to local mysql server.",
+  "version": "1.0.0",
+  "publisher": "GautamSagarMallela",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.connectToMySQL",
+        "title": "Connect to Local MySQL Server"
+      },
+      {
+        "command": "extension.disconnectFromMySQL",
+        "title": "Disconnect from Local MySQL Server"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.79.0",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "electron": "^25.2.0",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.4.1"
+  }
+}
