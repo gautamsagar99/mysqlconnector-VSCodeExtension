@@ -16,5 +16,4 @@ Save Button or ctrl+s will be helpful to save current script in your local syste
 
 # Here is the sample video
 
-
-
+![](https://github.com/gautamsagar99/mysqlconnector-VSCodeExtension/blob/master/video.gif?raw=true)
